@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGEC - Pacientes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Pacientes</h1>
+
+    <form id="form-paciente">
+      <label>Nombre: <input type="text" name="nombre" required /></label>
+      <label>Apellido: <input type="text" name="apellido" required /></label>
+      <label>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" /></label>
+      <label>Género:
+        <select name="genero">
+          <option value="">Seleccionar</option>
+          <option value="M">Masculino</option>
+          <option value="F">Femenino</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </label>
+      <label>Número de Identificación: <input type="text" name="numero_identificacion" required /></label>
+      <button type="submit">Guardar Paciente</button>
+    </form>
+
+    <h2>Lista de Pacientes</h2>
+    <ul id="lista-pacientes"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
